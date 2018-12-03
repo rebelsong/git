@@ -1,0 +1,2069 @@
+/*--A Design by zhaoxue 
+Author: zhaoxue
+--*/
+@charset "utf-8";
+*{  margin: 0; 
+	padding: 0;
+    border: 0;
+	outline:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);    
+}
+body,html{
+	background:#fff;
+	font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color: #fff;
+    background:#0e101f url("http://s-event.cn/EDM/dell/161011reg/images/bg.jpg") no-repeat top center;
+    /*background-size: cover;*/
+    border: 0;
+    font-family: "微软雅黑";
+}
+
+ul,li{
+	padding: 0;
+	margin: 0;	
+	list-style: none;
+    border: 0;
+}
+.clearfix:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}.clearfix {
+    *zoom: -1;
+    *clear: both;
+    *height: -1px;
+}
+
+h1,h2,h3,h4,h5,h6,label,p,img,span{
+	margin:0; padding: 0;border: 0;
+}
+a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 12px;
+    border: 0;
+}
+
+.main{
+    width: 100%;
+	max-width:1100px;
+	height: 100%;
+    margin: 40px auto 0 auto;
+    /*overflow: hidden;*/
+    /*overflow: auto;*/
+    /*zoom: 1;*/
+}
+.main .nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.main .nav .navbar{
+    max-width:1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.main .nav .navbar .icon{
+    width: 160px;
+    margin-top: 14px;
+    overflow: hidden;
+    zoom:1;
+    cursor: pointer;
+}
+.main .nav .navbar .icon .iconimg{
+    height: 37px;
+    position: absolute;
+    top: 70px;
+    left: -10px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/nav1.png") no-repeat center;
+    width: 160px;
+    z-index: 10;
+    cursor: pointer;
+}
+.main .nav .navbar .icon ul{
+    width: 160px;
+    background:rgba(0,0,0,0.85);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8000000,endColorstr=#c8000000);
+    margin-top: 50px;
+    overflow: hidden;
+    zoom:1;
+    display: none;
+}
+.main .nav .navbar .icon ul li{
+    width: 160px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-top: 1px solid #09224f;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.main .nav .navbar .icon ul .li01{
+     margin-top: 70px;
+ }
+.main .nav .navbar .icon ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+}
+.main .nav .navbar .icon ul li a:hover{
+    background:#0375ce;
+}
+
+
+.main .banner{
+    width: 100%;
+    height: 569px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/banner.jpg") no-repeat;
+    position:relative;
+}
+.main .banner1{
+    height: 430px;
+}
+.main .banner .logo{
+    width:168px;
+    height:67px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/logo.png") no-repeat;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+}
+.main .banner .text{
+    width:650px ;
+    height: 264px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/1-1.png") no-repeat center top;
+    position: absolute;
+    top: 155px;
+    right: 0;
+}
+.main .banner .abtn{
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    width: 230px;
+    height: 62px;
+}
+.main .banner1 .text{
+    width:650px ;
+    height: 264px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/1-1.png") no-repeat center top;
+    position: absolute;
+    top: 155px;
+    right: 0;
+}
+
+.main .banner .abtn .button{
+    display: block;
+    width: 230px;
+    height: 62px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/1-2.png") no-repeat center top;
+    background-size: 100% auto;
+    cursor: pointer;
+}
+.main .banner .abtn .button:hover{
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/1-2.png") no-repeat center bottom;
+    background-size: 100% auto;
+}
+
+.abtn_ej{
+    width: 230px;
+    height: 62px;
+    margin: 50px auto;
+}
+
+.abtn_ej .button{
+    display: block;
+    width: 230px;
+    height: 62px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/1-2.png") no-repeat center top;
+    background-size: 100% auto;
+    cursor: pointer;
+}
+.abtn_ej .button:hover{
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/1-2.png") no-repeat center bottom;
+    background-size: 100% auto;
+}
+
+.abtn_ej1{
+    width: 230px;
+    height: 62px;
+    margin: 50px auto;
+    position: absolute;
+    top:30px;
+    left:350px;
+}
+
+.abtn_ej1 .button{
+    display: block;
+    width: 230px;
+    height: 62px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/1-2.png") no-repeat center top;
+    background-size: 100% auto;
+    cursor: pointer;
+}
+.abtn_ej1 .button:hover{
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/1-2.png") no-repeat center bottom;
+    background-size: 100% auto;
+}
+
+
+
+.more{
+    background:url("http://s-event.cn/EDM/dell/161011reg/images/more.png") no-repeat;
+    width: 80px;
+    height: 30px;
+    display: block;
+}
+.more:hover{
+    background:url("http://s-event.cn/EDM/dell/161011reg/images/more1.png") no-repeat;
+}
+.more1{
+    top: 54%;
+    right: 10px;
+    position: absolute;
+}
+.more2{
+    bottom: 20px;
+    right: 20px;
+    position: absolute;
+}
+.more3{
+    bottom: 20px;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+}
+.more4{
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+}
+.more5{
+    top: 36.5%;
+    left: 20px;
+    position: absolute;
+}
+
+.main .piccont{
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 10px;
+}
+
+.main .piccont .leftbar{
+    float: left;
+    /*width: 69.4%;*/
+    max-width: 767px;
+    width: 767px;
+    overflow: hidden;
+    zoom:1;
+}
+
+.main .piccont .leftbar .leftpic1{
+    position: relative;
+    float: left;
+    /*width: 27.6%;*/
+    width: 211px;
+    max-width: 211px;
+    /*height: 673px;
+    overflow: hidden;
+    zoom:1;
+    background: red;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/pic1.jpg") no-repeat;*/
+}
+.main .piccont .leftbar .leftpic1 .ipic{
+    width: 100%;
+    display : block ;
+}
+.main .piccont .leftbar .leftpic1 .txt{
+    position: absolute;
+    right: 10px;
+    top:38%;
+    width: 52%;
+}
+
+.main .piccont .leftbar .leftpic2{
+    /*width: 42%;*/
+    width: 323px;
+    max-width: 323px;
+    margin-left: 10px;
+    position:relative;
+    float: left;
+}
+.main .piccont .leftbar .leftpic2 .txt{
+    position: absolute;
+    left:50%;
+    margin-left:-17%;
+    top: 20%;
+    width:34%;
+}
+.main .piccont .leftbar .leftpic2 .ipic{
+    width: 100%;
+    display : block ;
+}
+.main .piccont .leftbar .leftpic3{
+    position: relative;
+    float: left;
+    /*width: 27.7%;*/
+    width: 213px;
+    max-width: 213px;
+    /*height: 375px;
+    background: red;*/
+    margin-left: 10px;
+}
+.main .piccont .leftbar .leftpic3 .txt{
+    position: absolute;
+    left:50%;
+    margin-left:-38%;
+    top: 20%;
+    width:76%;
+}
+.main .piccont .leftbar .leftpic3 .ipic{
+    width: 100%;
+    display : block ;
+}
+.main .piccont .leftbar .leftpic4{
+    float: left;
+    /*width: 72%;*/
+    width: 546px;
+    max-width: 546px;
+    /*background: goldenrod;
+    height: 285px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/pic5.jpg") no-repeat;*/
+    margin-top:11px;
+    margin-left: 10px;
+    position: relative;
+}
+.main .piccont .leftbar .leftpic4 .txt{
+    left:50%;
+    margin-left:-10%;
+    top: 10%;
+    width:20%;
+    position: absolute;
+}
+.main .piccont .leftbar .leftpic4 .ipic{
+    width: 100%;
+    display : block ;
+}
+.main .piccont .leftbar .leftpic4 .txt1{
+    left:50%;
+    margin-left:-34%;
+    top: 43%;
+    width:68%;
+    position: absolute;
+}
+.main .piccont .leftbar .leftpic5{
+    float: left;
+    /*width: 40%;*/
+    width: 302px;
+    max-width: 302px;
+    /*background: blueviolet;
+    height: 209px;*/
+    /*background: url("http://s-event.cn/EDM/dell/161011reg/images/pic7.jpg") no-repeat;*/
+    margin-top:11px;
+    position: relative;
+}
+.main .piccont .leftbar .leftpic5 .txt{
+    right: 20px;
+    top: 25%;
+    width:36%;
+    position: absolute;
+}
+.main .piccont .leftbar .leftpic5 .ipic{
+    width: 100%;
+    display : block ;
+}
+
+.main .piccont .leftbar .leftpic6{
+    float: left;
+    /*width: 60%;*/
+    width: 454px;
+    max-width: 454px;
+    /*background: chartreuse;
+    height: 209px;*/
+    /*background: url("http://s-event.cn/EDM/dell/161011reg/images/pic8.jpg") no-repeat;*/
+    margin-top:11px;
+    margin-left:10px;
+    position: relative;
+}
+.main .piccont .leftbar .leftpic6 .txt{
+    left:50%;
+    margin-left:-12%;
+    top: 25%;
+    width:24%;
+    position: absolute;
+}
+.main .piccont .leftbar .leftpic6 .ipic{
+    width: 100%;
+    display : block ;
+}
+.main .piccont .leftbar .leftpic7{
+    float: left;
+    /*width: 60.1%;*/
+    width: 462px;
+    max-width: 462px;
+    /*background: cyan;
+    height: 206px;*/
+    /*background: url("http://s-event.cn/EDM/dell/161011reg/images/pic9.jpg") no-repeat;*/
+    margin-top:10px;
+    position: relative;
+}
+.main .piccont .leftbar .leftpic7 .txt{
+    left:20px;
+    /*margin-left:-18%;*/
+    top: 25%;
+    width:36%;
+    position: absolute;
+}
+.main .piccont .leftbar .leftpic7 .ipic{
+    width: 100%;
+    display : block ;
+}
+.main .piccont .leftbar .leftpic8{
+    float: left;
+    /*width: 39%;*/
+    width: 296px;
+    max-width: 296px;
+    /*height: 206px
+    background: peru;;*/
+    /*background: url("http://s-event.cn/EDM/dell/161011reg/images/pic10.jpg") no-repeat;*/
+    margin-left:10px;
+    margin-top:10px;
+    position: relative;
+
+}
+.main .piccont .leftbar .leftpic8 .txt{
+    left:50%;
+    margin-left:-18%;
+    top: 25%;
+    width:36%;
+    position: absolute;
+}
+.main .piccont .leftbar .leftpic8 .ipic{
+    width: 100%;
+    display : block ;
+}
+.main .piccont .rightbar{
+    float: right;
+    /*width: 30%;*/
+    width: 324px;
+    max-width: 324px;
+    /*background: green;*/
+}
+
+.main .piccont .rightbar .rigpic1{
+    /*max-width: 324px;*/
+    width: 100%;
+    /*height: 375px;*/
+    /*background: url("http://s-event.cn/EDM/dell/161011reg/images/pic4.jpg") no-repeat;*/
+    position: relative;
+}
+.main .piccont .rightbar .rigpic1 .txt{
+    left:50%;
+    margin-left:-12.5%;
+    top: 20%;
+    width:25%;
+    position: absolute;
+}
+.main .piccont .rightbar .rigpic1 .ipic{
+    width: 100%;
+    display : block ;
+}
+.main .piccont .rightbar .rigpic2{
+    width: 100%;
+    /*width: 324px;
+    height: 285px;*/
+    /*background: url("http://s-event.cn/EDM/dell/161011reg/images/pic6.jpg") no-repeat;*/
+    margin-top: 10px;
+    position: relative;
+}
+.main .piccont .rightbar .rigpic2 .txt{
+    left:50%;
+    margin-left:-16%;
+    top: 10%;
+    width:32%;
+    position: absolute;
+}
+.main .piccont .rightbar .rigpic2 .ipic{
+    width: 100%;
+    display : block ;
+}
+.main .piccont .rightbar .rigpic3{
+    width: 100%;
+    /*width: 324px;
+    height: 432px;*/
+    /*background: url("http://s-event.cn/EDM/dell/161011reg/images/pic11.jpg") no-repeat;*/
+    margin-top: 10px;
+    position: relative;
+}
+.main .piccont .rightbar .rigpic3 .txt{
+    left:20px;
+    top: 12%;
+    width:34%;
+    position: absolute;
+}
+.main .piccont .rightbar .rigpic3 .ipic{
+    width: 100%;
+    display : block ;
+}
+
+.hoverp{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background: #000;
+    filter: alpha(opacity=0);
+    -moz-opacity:0;
+    opacity: 0;
+    /*background:url("http://s-event.cn/EDM/dell/161011reg/images/black.png") repeat;*/
+    z-index: 0;
+}
+.hoverimg .txt{
+    z-index: 2;
+}
+
+.main .bottom{
+    width:100% ;
+    padding: 25px 0;
+    text-align: left;
+    color: #5a5b61;
+    font-size: 12px;
+    line-height: 22px;
+    word-spacing:-4px;
+}
+
+.hoverimg{
+    cursor: pointer;
+}
+.fuceng{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    top: 0;
+    z-index: 96;
+    display: none;
+}
+.fuceng .fcimg{
+    position:absolute;
+    width: 241px;
+    height: 343px;
+    top: 50%;
+    left: 50%;
+    margin-left: -120.5px;
+    margin-top: -181.5px;
+}
+
+.fuceng .fcimg .pclose{
+   padding: 0 5px;
+    /*width: 40px;*/
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    font-size: 34px;
+    color: #026dc1;
+    font-weight:100;
+    cursor: pointer;
+}
+.fuceng .fcimg .pclose span{
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+.fuceng .fcimg .tpic{
+    width: 100%;
+    height:303px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/fc.png") no-repeat;
+}
+
+
+/*关于我们*/
+.maincont{
+    width: 100%;
+    /*background: red;*/
+}
+.maincont .xnav{
+    width: 100%;
+    position: relative;
+    /*overflow: hidden;*/
+    /*overflow: auto;*/
+    /*zoom: 1;*/
+    margin-top: 10px;
+
+}
+.maincont .xnav .xnavpic{
+    float: left;
+    width: 24.5%;
+    max-width: 272px;
+}
+.maincont .xnav .xnavpic img{
+    width: 100%;
+    margin-left:-18px;
+    /*margin-top: -18px;*/
+}
+
+.maincont .xnav .xline{
+    float: right;
+    width:75%;
+    height: 100%;
+    background:url("http://s-event.cn/EDM/dell/161011reg/images/line.png") no-repeat right center;
+    background-size: 100% auto;
+    position:absolute;
+    right: 0;
+}
+
+.maincont .xnav .xline1{
+    float: right;
+    width:75%;
+    height: 100%;
+    background:url("http://s-event.cn/EDM/dell/161011reg/images/line1.png") no-repeat right center;
+    background-size: 100% auto;
+    position:absolute;
+    right: 0;
+}
+.maincont .xnav .xline2{
+    float: right;
+    width:75%;
+    height: 100%;
+    background:url("http://s-event.cn/EDM/dell/161011reg/images/line2.png") no-repeat right center;
+    background-size: 100% auto;
+    position:absolute;
+    right: 0;
+}
+.maincont .xnav .xline3{
+    float: right;
+    width:75%;
+    height: 100%;
+    background:url("http://s-event.cn/EDM/dell/161011reg/images/line3.png") no-repeat right center;
+    background-size: 100% auto;
+    position:absolute;
+    right: 0;
+}
+.maincont .xnav .xnavpic1{
+    float: left;
+    width: 36%;
+    max-width: 382px;
+}
+.maincont .xnav .xline_f{
+    float: right;
+    width:64%;
+    height: 100%;
+}
+.maincont .cont_1{
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: -30px;
+    color: #c3c3c3;
+}
+.maincont .cont_1 .cont_1_title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.maincont .cont_1 .cont_1_ab{
+    width: 90%;
+    float: right;
+    font-size: 18px;
+    line-height: 36px;
+}
+.ab_ul{
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    zoom:1;
+}
+.ab_ul li{
+    display: inline-block;
+    float: left;
+    width: 30%;
+    /*height: 30px;*/
+    padding: 0 5px;
+    max-width: 257px;
+    background: #2c356c;
+    margin-left:13%;
+}
+.ab_ul .abli01{
+    margin-left: 0;
+}
+
+/*联系我们*/
+.co_p{
+    width: 306px;
+    background: rgba(77,90,108,0.1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#194d5a6c,endColorstr=#194d5a6c);
+    padding: 0 5px;
+    line-height: 36px;
+    margin: 10px 0 0 0;
+}
+.co_map{
+    padding: 15px;
+    width: 560px;
+    border: 1px solid #282e41;
+    margin: 20px 0 0 0;
+    margin-left: 12%;
+}
+.co_map img{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+/*资料中心*/
+.do_tab{
+    width: 100%;
+    position: relative;
+}
+.do_tab img{
+    display: block;
+    width: 100%;
+}
+.do_tab ul{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 100%;
+}
+.do_tab ul li{
+    display: inline-block;
+    height: 100%;
+    background: blue;
+    padding: 0 5% 0 5%;
+    color: #1f1822;
+    font-size: 18px;
+    font-weight: 100;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/xnav-l.jpg") no-repeat right center;
+    line-height: 60px;
+    cursor: pointer;
+}
+.do_tab ul li:hover{
+    color: #ffffff;
+}
+.do_tab ul .do_cur{
+    color: #ffffff;
+}
+.do_xtab{
+    max-width: 1051px;
+    width: 90%;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/do_txnav.png") no-repeat top center;
+    height: 35px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+}
+.do_xtab .tablable{
+    display: inline-block;
+    padding: 0 5% 0 10px;
+    color: #ffffff;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/jt.png") no-repeat left center;
+    cursor: pointer;
+}
+.do_xtab .tablable:hover{
+    color: #000000;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/jt1.png") no-repeat left center;
+}
+.do_xtab .tablable_curr{
+    color: #000000;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/jt1.png") no-repeat left center;
+}
+.do_cont{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.do_cont .do_dfl{
+    width: 100%;
+    /*display: none;*/
+}
+.do_cont .do_dfl li{
+    display: inline-block;
+    width: 29%;
+    max-width: 317px;
+    overflow: hidden;
+    zoom:1;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left:6.3%;
+}
+.do_cont .do_dfl li .doimg{
+    max-width: 295px;
+    max-height: 205px;
+    width:100%;
+    padding: 10px;
+    border: 1px solid #1e595e;
+}
+.do_cont .do_dfl li .doimg img{
+    display: block;
+    opacity: 1;
+    width: 100%;
+}
+.do_cont .do_dfl li .dotxt{
+    width: 100%;
+    line-height: 36px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #d0d1d1;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    /*background: blue;*/
+}
+.do_cont .do_dfl li .dobtn{
+    width: 93px;
+    height: 38px;
+    margin: 5px auto 0 auto;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/do_btn.png") no-repeat center top;
+}
+.do_cont .do_dfl .doli01{
+    margin-left: 0;
+}
+.do_cont .do_dfl li:hover .doimg{
+    border: 1px solid #0473ae;
+}
+.do_cont .do_dfl li:hover .doimg img{
+    opacity: 0.8;
+}
+.do_cont .do_dfl li:hover .dotxt{
+    color:#0473ae;
+}
+.do_cont .do_dfl li:hover .dobtn{
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/do_btn.png") no-repeat center bottom;
+}
+.do_list{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+}
+.do_list span{
+    display: inline-block;
+    padding: 0 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.do_list span:hover{
+    color: #d0d1d1;
+    background: #038ab1;
+}
+.do_list span.current{
+    background: #038ab1;
+}
+.do_list input{
+    display: inline-block;
+    border: 1px solid #038ab1;
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    background: #ffffff;
+}
+/*会议日程*/
+.ag_title{
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    zoom:1;
+}
+.ag_title ul{
+    width: 100%;
+    height: 36px;
+}
+.ag_title ul li{
+    float: left;
+    width: 252px;
+    padding:0 30px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    background:url("http://s-event.cn/EDM/dell/161011reg/images/dot.png") no-repeat 0 center;
+    cursor: pointer;
+    color: #ffffff;
+}
+.ag_title ul li:hover{
+    color: #43d1f8
+}
+.ag_title ul .aghover{
+    color: #43d1f8
+}
+.ag_title ul li .dot{
+    width: 26px;
+    height: 100%;
+    
+    display: inline-block;
+    margin-right: 10px;
+    /*margin-top: 5px;*/
+}
+.ag_date{
+    background: #444042;
+    padding: 0 35px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 52px;
+    position: relative;
+}
+.line_hover{
+    width: 230px;
+    height: 3px;
+    background: #43b9da;
+    box-shadow: 0 0 6px #43b9da;
+    position: absolute;
+    top: 0;
+    left: -35px;
+}
+.ag_list{
+    width: 100%;
+    /*height: 112px;*/
+    padding: 20px 15px 20px 35px;
+    font-size: 20px;
+    overflow: hidden;
+    zoom:1;
+    line-height: 36px;
+}
+.ag_list2{
+    line-height: 24px;
+    background: rgba(255,255,255,0.1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);
+    font-size: 18px;
+    padding: 20px 15px 20px 35px;
+
+}
+.ag_list .ag_le{
+    float: left;
+    width: 18%;
+    color: #43d1f8;
+    font-size: 34px;
+}
+.ag_list .ag_le_t{
+    border-right: 1px solid #43d1f8;
+}
+.ag_list .ag_le_n{
+    font-size: 24px;
+    color: #ffffff;
+}
+.ag_list .ag_re{
+    float: left;
+    width: 70%;
+    color: #43d1f8;
+    padding-left: 5%;
+    font-size: 26px;
+}
+.ag_list .ag_re_n{
+    color: #fff;
+    font-size: 20px;
+}
+.ag_list .ag_fenge{
+    /*margin: 30px;*/
+    width: 100%;
+    height:30px;
+}
+.ag_list .ag_re .ag_time{
+    color: #fff;
+    font-weight: 100;
+    margin-left:10%;
+}
+.ag_list1{
+    background: none;
+}
+
+
+.ag_af_nav{
+    width: 100%;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/ag_afnav.png") no-repeat;
+    background-size: 100% 100%;
+    height: 70px;
+    display: none;
+}
+.ag_af_nav ul{
+    height: 50px;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+}
+.ag_af_nav ul li{
+    float: left;
+    width: 16.5%;
+    height: 100%;
+    text-align: center;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/xnav-l.jpg") no-repeat right center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;  
+    color: #575757;
+}
+.ag_af_nav ul li:hover{
+    color: #fff;
+}
+.ag_af_nav ul .ag_af_hover{
+    color: #fff;
+}
+.ag_af_nav ul li span{
+    display: block;
+    margin-top: 15px;
+}
+
+.ag_cont{
+    margin-top: 30px;
+}
+.ag_cont1{
+    background: rgba(255,255,255,0.1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff) \9;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -o-border-radius: 40px;
+    -ms-border-radius: 40px;
+    border-radius: 40px\9;
+    padding: 20px 30px 30px 30px;
+    color: #fff;
+    display: none;
+}
+:root .ag_cont1 {background:none\9\0;filter:none\9\0;}
+
+.ag_cont1 .t_cont{
+    /*border-bottom: 1px dotted #ffffff;*/
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.ag_cont .t_aglist{
+    width: 100%;
+    /*padding-top: 30px;*/
+    /*border-top: 1px dotted #ffffff;*/
+}
+.ag_cont .t_aglist .t_li{
+    /*height: 36px;*/
+    line-height: 36px;
+    margin:8px 0;
+    padding: 0 10px;
+    font-size: 18px;
+    overflow: hidden;
+    zoom:1;
+}
+.ag_cont .t_aglist .t_li .t_span{
+    margin-right: 8%;
+    display: block;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 15%;
+    min-width: 105px;
+}
+.ag_cont .t_aglist .t_li .t_span1{
+    display: block;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 70%;
+}
+.ag_cont .t_aglist .t_li01{
+    background:none;
+}
+.ag_cont .t_aglist .t_li02{
+    background:none;
+    background: rgba(255,255,255,0.1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);
+}
+
+
+/*赞助商*/
+.spo_pic{
+    float: left;
+    width: 25%;
+    max-width:265px;
+    /*height: 92px;*/
+    margin:0px 5px 10px ;
+}
+.spo_pic1{
+    width:300px;
+}
+.spo_pic2{
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/spo_t5.png") no-repeat left bottom;
+    height: 34px;
+}
+.spo_pic img{
+    width: 100%;
+    display: block;
+}
+/*演讲嘉宾*/
+.maincont .cont_1 .cont_1_spe{
+    font-size: 18px;
+    line-height: 36px;
+    padding: 0 40px;
+}
+.speDiv{
+    width: 40%;
+    max-width: 399px;
+    float: left;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+.speDiv .speaker{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.speDiv .speaker .spe_pic{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.speDiv .spe_name{
+    position: absolute;
+    bottom:0;
+    width: 196px;
+    left: -60px;
+    bottom: -45px;
+}
+.speDiv .spe_k{
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+.speDiv .spe_k img{
+    display: block;
+    width: 100%;
+}
+
+/*大会直播*/
+
+.li_videobg{
+    width: 90%;
+    max-width: 1050px;
+    margin: 0 auto 30px ;
+    cursor: pointer;
+}
+.li_videobg:hover{
+    opacity: 0.8;
+}
+.li_videobg img{
+    display: block;
+    width: 100%;
+}
+.li_fix{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    z-index: 96;
+    display: none;
+}
+.li_video{
+    width: 70%;
+    max-width: 820px;
+    height: 460px;
+    border: 1px solid #0799ff;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    margin-top: -230px;
+    margin-left: -35%;
+    box-shadow: 0px 0px 5px #0799ff;
+    /*position: relative;*/
+    position: absolute;
+}
+.video_close{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #0387c8;
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    z-index: 3;
+    cursor: pointer;
+}
+/*数字化热力图*/
+.di_title{
+
+    width: 95%;
+    max-width: 943px;
+    margin: 0 auto;
+}
+.di_title img{
+    display: block;
+    width: 100%;
+}
+.di_title2{
+    width: 100%;
+}
+.di_title2 img{
+    display: block;
+}
+.di_cont{
+    width: 100%;
+    margin-top: 15px;
+}
+.di_left{
+    float: left;
+    width: 8px;
+    /*margin-right: 10px;*/
+}
+.di_left img{
+    display: block;
+}
+.di_right{
+    float: right;
+    width: 98.5%;
+    max-width:1092px ;
+
+
+}
+.di_right_c{
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/di_3.png") repeat;
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+}
+.di_right ul{
+    width: 100%;
+    padding: 30px 30px 0px 30px;
+    overflow: hidden;
+    zoom: 1;
+}
+.di_right ul li{
+    width:28%;
+    font-size: 22px;
+    color: #ffffff;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+.di_inp{
+    /*display: block;*/
+    float: left;
+    width: 29px;
+    height: 29px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/check.jpg") no-repeat;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.form-control{
+    width: 92%;
+    border-bottom: 1px solid #0989a1;
+    margin: 10px auto 0;
+    display: block;
+    background: none;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+}
+.di_btn{
+    width: 235px;
+    height: 60px;
+    margin: 0 auto;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/di_btn.png") no-repeat;
+    margin-bottom: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.di_btn:hover{
+    opacity: 0.6;
+}
+.di_line{
+    width: 100%;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/di_4.png") no-repeat top;
+    height: 32px;
+    background: 100% auto;
+}
+
+.di_right img{
+    display: block;
+}
+.di_fc{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    z-index: 96;
+    display: none;
+}
+.di_fc_cont{
+    width: 316px;
+    height: 324px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/di_fc.png") no-repeat top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -167px;
+    margin-left:-158px;
+}
+.di_fc_cont .di_close{
+    width:60px;
+    height: 60px;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+
+
+.font1{
+    font-size: 30px;
+    color:#ffffff;
+    letter-spacing:2px;
+}
+.ewm_cont{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: 0;
+}
+.ewm_cont1{
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.ewm_btn{
+    position: absolute;
+    width: 31px;
+    height: 89px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/wx.png") no-repeat;
+    right: -36px;
+    margin-top: 200px;
+    z-index: 2;
+    display: none;
+    cursor: pointer;
+}
+.ewm{
+    position: absolute;
+    width: 139px;
+    height: 238px;
+    background: url("http://s-event.cn/EDM/dell/161011reg/images/MA.png") no-repeat;
+    z-index: 1;
+    right: -145px;
+    top: 50%;
+    margin-top: 200px;
+}
+.ewm .e_close{
+    width: 50px;
+    height: 40px;
+    float: right;
+    display: block;
+    cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+
+    .ewm{
+       right: -125px;
+    }
+
+
+}
+@media screen and (max-width: 1300px) {
+
+    .ewm{
+        right: 0;
+    }
+    .ewm_btn{
+        right: 0;
+    }
+
+}
+@media screen and (max-width: 1125px) {
+    .spo_pic{
+        width: 24%;
+    }
+    .ewm{
+        right: 0;
+    }
+    .ewm_btn{
+        right: 0;
+    }
+
+
+    .main{
+        width: 100%;
+        max-width:1080px;
+
+    }
+    .main .piccont .leftbar{
+        width: 69.8%;
+    }
+
+    .main .piccont .leftbar .leftpic1{
+        width: 27.4%;
+        max-width: 212px;
+    }
+
+    .main .piccont .leftbar .leftpic2{
+        width: 41.9%;
+        max-width: 323px;
+    }
+    .main .piccont .leftbar .leftpic3{
+        width: 27.6%;
+        max-width: 213px;
+        margin-left: 10px;
+    }
+    .main .piccont .leftbar .leftpic4{
+        width: 71%;
+        max-width: 546px;
+    }
+
+    .main .piccont .leftbar .leftpic5{
+        width: 39.5%;
+        max-width: 302px;
+    }
+
+    .main .piccont .leftbar .leftpic6{
+        width: 59%;
+        max-width: 454px;
+    }
+
+    .main .piccont .leftbar .leftpic7{
+        width: 60%;
+        max-width: 462px;
+    }
+    .main .piccont .leftbar .leftpic8{
+        width: 38.5%;
+        max-width: 296px;
+    }
+
+    .main .piccont .rightbar{
+        width: 29.3%;
+        max-width: 324px;
+    }
+    .ab_ul li{
+        margin-left: 12%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1080px) {
+
+
+    .ewm{
+        right: 0;
+    }
+
+    .main{
+        width: 100%;
+        max-width:1080px;
+
+    }
+    .main .piccont .leftbar{
+        width: 69.8%;
+    }
+
+    .main .piccont .leftbar .leftpic1{
+        width: 27.4%;
+        max-width: 212px;
+    }
+
+    .main .piccont .leftbar .leftpic2{
+        width: 41.9%;
+        max-width: 323px;
+    }
+    .main .piccont .leftbar .leftpic3{
+        width: 27.6%;
+        max-width: 213px;
+        margin-left: 10px;
+    }
+    .main .piccont .leftbar .leftpic4{
+        width: 71%;
+        max-width: 546px;
+    }
+
+    .main .piccont .leftbar .leftpic5{
+        width: 39.5%;
+        max-width: 302px;
+    }
+
+    .main .piccont .leftbar .leftpic6{
+        width: 59%;
+        max-width: 454px;
+    }
+
+    .main .piccont .leftbar .leftpic7{
+        width: 60%;
+        max-width: 462px;
+    }
+    .main .piccont .leftbar .leftpic8{
+        width: 38.5%;
+        max-width: 296px;
+    }
+
+    .main .piccont .rightbar{
+        width: 29.3%;
+        max-width: 324px;
+    }
+    .ab_ul li{
+        margin-left: 11%;
+    }
+
+
+    /*.do_cont li{*/
+        /*width: 25%;*/
+    /*}*/
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    .ag_list .ag_re{
+        width: 68%;
+    }
+    .ab_ul li{
+        margin-left:10%;
+    }
+    
+
+}
+@media screen and (max-width: 1030px) {
+.spo_pic{
+        width: 23.8%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ag_list .ag_le{
+        width: 20%;
+    }
+    .ab_ul li{
+        margin-left:9%;
+    }
+
+    .ag_list .ag_re{
+        width: 67%;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .ag_list .ag_le{
+        width: 20%;
+    }
+
+    .ag_list .ag_re{
+        width: 66%;
+    }
+
+    .main{
+        width: 100%;
+        max-width:992px;
+
+    }
+    .main .piccont .leftbar{
+        width: 69.8%;
+    }
+
+    .main .piccont .leftbar .leftpic1{
+        width: 27.4%;
+    }
+
+    .main .piccont .leftbar .leftpic2{
+        width: 41.9%;
+    }
+    .main .piccont .leftbar .leftpic3{
+        width: 27.6%;
+    }
+    .main .piccont .leftbar .leftpic4{
+        width: 71%;
+    }
+
+    .main .piccont .leftbar .leftpic5{
+        width: 39.5%;
+    }
+
+    .main .piccont .leftbar .leftpic6{
+        width: 58.6%;
+    }
+
+    .main .piccont .leftbar .leftpic7{
+        width: 59.5%;
+    }
+    .main .piccont .leftbar .leftpic8{
+        width: 38.5%;
+    }
+
+    .main .piccont .rightbar{
+        width: 29.3%;
+    }
+
+    .ab_ul li{
+        margin-left:7%;
+    }
+    .co_map{
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .ag_list .ag_le{
+        width: 22%;
+    }
+    .ag_list .ag_re{
+        width: 65%;
+    }
+    .main{
+        width: 100%;
+        max-width:960px;
+
+    }
+    .main .piccont .leftbar{
+        width: 69.8%;
+    }
+
+    .main .piccont .leftbar .leftpic1{
+        width: 27.3%;
+    }
+
+    .main .piccont .leftbar .leftpic2{
+        width: 41.7%;
+    }
+    .main .piccont .leftbar .leftpic3{
+        width: 27.4%;
+    }
+    .main .piccont .leftbar .leftpic4{
+        width: 70.8%;
+    }
+
+    .main .piccont .leftbar .leftpic5{
+        width: 39.5%;
+    }
+
+    .main .piccont .leftbar .leftpic6{
+        width: 58.6%;
+    }
+
+    .main .piccont .leftbar .leftpic7{
+        width: 59.5%;
+    }
+    .main .piccont .leftbar .leftpic8{
+        width: 38.5%;
+    }
+
+    .main .piccont .rightbar{
+        width: 29.2%;
+    }
+    .ab_ul li {
+        margin-left: 2%;
+    }
+    .ag_af_nav ul {
+        height: 40px;
+        padding: 15px 0;
+    }
+    .ag_af_nav ul li{
+        font-size:14px;
+    }
+    .ag_af_nav ul li span {
+        margin-top: 11px;
+    }
+    .ab_ul li{
+        margin-left:3%;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .ag_list .ag_le{
+        width: 22%;
+    }
+    .ag_list .ag_re{
+        width: 65%;
+    }
+
+    .speDiv{
+        width: 38%;
+    }
+
+}
+@media screen and (max-width: 930px) {
+    .ag_list .ag_le{
+        width: 22%;
+    }
+    .ag_list .ag_re{
+        width: 65%;
+    }
+    .speDiv{
+        width: 36%;
+    }
+
+}
+@media screen and (max-width: 890px) {
+    .ag_list .ag_le{
+        width: 22%;
+    }
+    .ag_list .ag_re{
+        width: 65%;
+    }
+
+}
+@media screen and (max-width: 875px) {
+    .ag_list .ag_le{
+        width: 22%;
+    }
+    .ag_list .ag_re{
+        width: 65%;
+    }
+    .spo_pic{
+        width: 23.6%;
+    }
+
+}
+@media screen and (max-width: 845px) {
+    .ag_list .ag_le{
+        width: 22%;
+    }
+    .ag_list .ag_re{
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    .ag_list .ag_le{
+        width: 22%;
+    }
+    .ag_list .ag_re{
+        width:65%;
+    }
+    .main{
+        width: 100%;
+        max-width:830px;
+
+    }
+    .main .piccont .leftbar{
+        width: 69.73%;
+    }
+
+    .main .piccont .leftbar .leftpic1{
+        width: 27.3%;
+    }
+
+    .main .piccont .leftbar .leftpic2{
+        width: 41.5%;
+    }
+    .main .piccont .leftbar .leftpic3{
+        width: 27.2%;
+    }
+    .main .piccont .leftbar .leftpic4{
+        width: 70.6%;
+    }
+
+    .main .piccont .leftbar .leftpic5{
+        width: 39.5%;
+    }
+
+    .main .piccont .leftbar .leftpic6{
+        width: 58.6%;
+    }
+
+    .main .piccont .leftbar .leftpic7{
+        width: 59.5%;
+    }
+    .main .piccont .leftbar .leftpic8{
+        width: 38.5%;
+    }
+
+    .main .piccont .rightbar{
+        width: 29.08%;
+    }
+
+    .ag_af_nav ul {
+        height: 40px;
+        padding: 15px 0;
+    }
+    .ag_af_nav ul li{
+        font-size:12px;
+    }
+    .ag_af_nav ul li span {
+        margin-top: 11px;
+    }
+    .co_map{
+        margin-left: 1%;
+    }
+
+}
+
+@media screen and (max-width: 785px) {
+    .ag_list .ag_le{
+        width: 25%;
+    }
+    .ag_list .ag_re{
+        width:65%;
+    }
+
+    .main{
+        width: 100%;
+        max-width:785px;
+
+    }
+    .main .piccont .leftbar{
+        width: 69.7%;
+    }
+
+    .main .piccont .leftbar .leftpic1{
+        width: 27.3%;
+    }
+
+    .main .piccont .leftbar .leftpic2{
+        width: 41.5%;
+    }
+    .main .piccont .leftbar .leftpic3{
+        width: 27.2%;
+    }
+    .main .piccont .leftbar .leftpic4{
+        width: 70.6%;
+    }
+
+    .main .piccont .leftbar .leftpic5{
+        width: 39.3%;
+    }
+
+    .main .piccont .leftbar .leftpic6{
+        width: 58.4%;
+    }
+
+    .main .piccont .leftbar .leftpic7{
+        width: 59.5%;
+    }
+    .main .piccont .leftbar .leftpic8{
+        width: 38.5%;
+    }
+
+    .main .piccont .rightbar{
+        width: 29%;
+    }
+    .ab_ul li{
+        margin-left:2%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .ag_list .ag_le{
+        width: 25%;
+    }
+    .ag_list .ag_re{
+        width:65%;
+    }
+
+    .main{
+        width: 100%;
+        max-width:750px;
+
+    }
+    .main .piccont .leftbar{
+        width: 69.7%;
+    }
+
+    .main .piccont .leftbar .leftpic1{
+        width: 27.2%;
+    }
+
+    .main .piccont .leftbar .leftpic2{
+        width: 41.4%;
+    }
+    .main .piccont .leftbar .leftpic3{
+        width: 27.2%;
+    }
+    .main .piccont .leftbar .leftpic4{
+        width: 70.5%;
+    }
+
+    .main .piccont .leftbar .leftpic5{
+        width: 39.3%;
+    }
+
+    .main .piccont .leftbar .leftpic6{
+        width: 58.4%;
+    }
+
+    .main .piccont .leftbar .leftpic7{
+        width: 59.3%;
+    }
+    .main .piccont .leftbar .leftpic8{
+        width: 38.3%;
+    }
+
+    .main .piccont .rightbar{
+        width: 29%;
+    }
+    .spo_pic{
+        width: 23.4%;
+    }
+
+
+}
+
+@media screen and (max-width: 720px) {
+    .ag_list .ag_le{
+        width: 25%;
+    }
+    .ag_list .ag_re{
+        width:65%;
+    }
+    .ag_list .ag_re .ag_time {
+        margin-left: 4%;
+    }
+    .main{
+        width: 100%;
+        max-width: 720px;
+    }
+    .main .piccont .leftbar{
+        width: 69.75%;
+    }
+
+    .main .piccont .leftbar .leftpic1{
+        width: 27.1%;
+    }
+
+    .main .piccont .leftbar .leftpic2{
+        width: 41.2%;
+    }
+    .main .piccont .leftbar .leftpic3{
+        width: 27.1%;
+    }
+    .main .piccont .leftbar .leftpic4{
+        width: 70.5%;
+    }
+
+    .main .piccont .leftbar .leftpic5{
+        width: 39.3%;
+    }
+
+    .main .piccont .leftbar .leftpic6{
+        width: 58.4%;
+    }
+
+    .main .piccont .leftbar .leftpic7{
+        width: 59.3%;
+    }
+    .main .piccont .leftbar .leftpic8{
+        width: 38.3%;
+    }
+
+    .main .piccont .rightbar{
+        width: 28.96%;
+    }
+    .ag_af_nav ul li {
+        font-size: 10px;
+    }
+
+
+}
+@media screen and (max-width: 700px) {
+    .ag_list .ag_le {
+        width: 25%;
+    }
+
+    .ag_list .ag_re {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .ag_list .ag_le{
+        width: 25%;
+    }
+    .ag_list .ag_re{
+        width:65%;
+    }
+    .main{
+        width: 100%;
+        min-width:680px;
+
+        max-width:680px;
+
+    }
+    .main .piccont .leftbar{
+        width: 69.8%;
+        min-width: 433px;
+    }
+
+    .main .piccont .leftbar .leftpic1{
+        width: 27.1%;
+    }
+
+    .main .piccont .leftbar .leftpic2{
+        width: 41.1%;
+    }
+    .main .piccont .leftbar .leftpic3{
+        width: 27.1%;
+        margin-left: 10px;
+    }
+    .main .piccont .leftbar .leftpic4{
+        width: 70.5%;
+    }
+
+    .main .piccont .leftbar .leftpic5{
+        width: 39.3%;
+    }
+
+    .main .piccont .leftbar .leftpic6{
+        width: 58.4%;
+    }
+
+    .main .piccont .leftbar .leftpic7{
+        width: 59.3%;
+    }
+    .main .piccont .leftbar .leftpic8{
+        width: 38.3%;
+    }
+
+    .main .piccont .rightbar{
+        width: 28.96%;
+    }
+
+
+    .more2{
+        bottom: 10px;
+        right: 20px;
+        position: absolute;
+    }
+    .more3{
+        bottom: 10px;
+        left: 50%;
+        margin-left: -40px;
+        position: absolute;
+    }
+    .more4{
+        bottom: 10px;
+        left:20px;
+        position: absolute;
+    }
+
+
+}
+
+@media screen and (max-width: 414px) {
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 360px) {
+}
+
+@media screen and (max-width: 320px) {
+
+}

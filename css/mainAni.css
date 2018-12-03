@@ -1,0 +1,72 @@
+/*--A Design by zhaoxue 
+Author: zhaoxue
+--*/
+
+
+.indexAni{
+    transition:all 0.6s ease 0s;
+    -webkit-transition:all 0.6s ease 0s;
+    -moz-transition:all 0.6s ease 0s;
+    -o-transition:all 0.6s ease 0s;
+    -ms-transition:all 0.6s ease 0s;
+}
+.indexAni1{
+    transition:all 0.3s ease 0s;
+    -webkit-transition:all 0.3s ease 0s;
+    -moz-transition:all 0.3s ease 0s;
+    -o-transition:all 0.3s ease 0s;
+    -ms-transition:all 0.3s ease 0s;
+    /*opacity: 1;*/
+}
+.navAni{
+
+    transform: translate(-160px,0);
+    -webkit-transform: translate(-160px,0);
+    -moz-transform: translate(-160px,0);
+    -o-transform: translate(-160px,0);
+    -ms-transform: translate(-160px,0);
+    opacity: 0;
+}
+.navAni1{
+
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    opacity: 1;
+}
+.textAni{
+	transform: translate(0,-5px);
+	-webkit-transform: translate(0,-5px);
+	-moz-transform: translate(0,-5px);
+	-o-transform: translate(0,-5px);
+    -ms-transform: translate(0,-5px);
+
+}
+.abtnAni{
+    transform: translate(0,5px);
+    -webkit-transform: translate(0,5px);
+    -moz-transform: translate(0,5px);
+    -o-transform: translate(0,5px);
+    -ms-transform: translate(0,5px);
+}
+
+.hoverpAni{
+    filter: alpha(opacity=30);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+}
+.pictxtAni{
+    transform: translate(0,5px);
+    -webkit-transform: translate(0,5px);
+    -moz-transform: translate(0,5px);
+    -o-transform: translate(0,5px);
+    -ms-transform: translate(0,5px);
+}
+/*.pictxtAni{*/
+    /*-webkit-animation: pictxt 1s 0s 1 normal linear;*/
+    /*-o-animation:  pictxt 1s 0s 1 normal linear;*/
+    /*animation:  pictxt 1s 0s 1 normal linear;*/
+/*}*/
+
